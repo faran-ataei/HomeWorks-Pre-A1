@@ -3,8 +3,8 @@ import Alert from "./components/alert-component/Alert";
 import { Data } from "./components/building-a-layout/Data.jsx";
 import { MapMethode } from "./components/maping-array-objects-to-li/mapMethod.jsx";
 import { PlanetsList } from "./components/maping-array-of-objects-to-li/app.jsx";
-// import { Pokecard } from "./components/props-component-architecture/Pokecard.jsx";
 import { Pokedex } from "./components/props-component-architecture/Pokedex.jsx";
+import { CustomerInformation } from "./components/rendering-from-objects/app.jsx";
 
 function App() {
   const animalsName = [
@@ -32,7 +32,8 @@ function App() {
       <PlanetsList />
 
       <Pokedex />
-      {/* <Pokecard /> */}
+
+      <CustomerInformation/>
     </>
   );
 }

@@ -55,8 +55,6 @@ export function Pokedex() {
             image={pokemon.image}
           />
         ))}
-
-        hellow
       </div>
     </>
   );
