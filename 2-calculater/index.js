@@ -1,5 +1,6 @@
 const express = require("express");
 const fs = require("fs/promises");
+const path = require("path");
 
 const app = express();
 
@@ -7,7 +8,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-app.post("/", async (req, res) => {
+app.post("/", (req, res) => {
     console.log("object");
     try {
       const { first, second } = req.body;
@@ -22,17 +23,19 @@ app.post("/", async (req, res) => {
   
       let existingData;
   
-      const newData = { title, post };
+      const newData = { first, second };
       
       console.log(newData);
       existingData.push(newData);
+
+      app.use(express.static(__dirname));
+      res.sendFile(__dirname + "/html/secondPage.html");
+
 
     } catch (err) {
       res.status(500).send("Internal server error");
     }
   
-    app.use(express.static(__dirname));
-    res.sendFile(__dirname + "/html/index.html");
   });
 
 
