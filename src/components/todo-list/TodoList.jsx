@@ -23,6 +23,13 @@ export function TodoList() {
     setTodoList(newTodoList);
   };
 
+  const handleEditTodo = (index) => {
+    const newTodoList = [...todoList];
+    const inputElement = document.querySelector("input");  
+    newTodoList[index] = inputElement.value;
+    setTodoList(newTodoList);
+  };
+
   return (
     <>
       <div className="todo-list">
@@ -44,6 +51,7 @@ export function TodoList() {
                   <button onClick={() => handleRemoveTodo(index)}>
                     Remove
                   </button>
+                  <button onClick={() => handleEditTodo(index)}>Edit</button>
                 </div>
               </div>
             ))}

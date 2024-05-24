@@ -51,3 +51,44 @@ label {
 .todos-count {
   font-size: 20px;
 }
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background: #141e30;
+}
+
+.todo button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.app {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.light-theme {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
