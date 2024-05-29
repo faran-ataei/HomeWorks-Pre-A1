@@ -6,7 +6,6 @@ import RandomAdviceRendering from "./components/RandomAdviceRendering/RandomAdvi
 function App() {
   return (
     <>
-      {/* <PostRendering /> */}
       <RandomAdviceRendering />
     </>
   )
