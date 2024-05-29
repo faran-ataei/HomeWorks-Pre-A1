@@ -8,5 +8,5 @@ this is how you can use the final data in your project:
 ```jsx
       const response = await fetch('https://api.adviceslip.com/advice')
       const data = await response.json()
-      setAdvice(data.slip.advice) 
+      setAdvice(data.slip.advice)
 ```
