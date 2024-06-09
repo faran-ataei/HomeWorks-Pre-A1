@@ -13,9 +13,12 @@ export default function ListItem() {
   return (
     <div className="card-parent">
       {data.map((item) => {
+        console.log(item);
         return (
           <>
             <div className="cards" key={uuid}>
+              <button className={"card-btn" + " " + item.name.slice(0, item.name.indexOf(" "))}><i className="bi bi-basket3-fill"></i></button>
+
               <img
                 className="card-img-top card-img"
                 src={item.src}
