@@ -10,11 +10,6 @@
     "author": "Jules Verne"
   },
   {
-    "id": 3,
-    "name": "David Copperfield",
-    "author": "Charles Dickens"
-  },
-  {
     "id": 4,
     "name": "The Adventures of Tom Sawyer",
     "author": "Mark Twain"
@@ -23,10 +18,5 @@
     "id": 6,
     "title": "Alice in Wonderland",
     "author": "Lewis Carroll"
-  },
-  {
-    "id": 7,
-    "name": "Alice in Wonderland",
-    "author": "Lewis Carrolllllllllllll"
   }
 ]
